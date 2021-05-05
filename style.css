@@ -1,0 +1,43 @@
+html{
+    font-size:16px;
+}
+*{
+    box-sizing:border-box;
+}
+header{
+    width:100%;
+    height:150px;
+    background-color: black;
+    position:fixed;
+    top:0;
+    
+}
+.logo_container{
+    height:100%;
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+.logo_container h2{
+    color:white;
+    font-weight:500;
+    font-family:"Londrina Solid";
+    font-size:2.5rem;
+}
+@media only screen and (min-width:800px){
+    .logo_container{
+        flex-direction:row;
+        justify-content:flex-start;
+        margin-left:1%;
+    }
+    .logo{
+        
+        width:130px;
+        height:130px;
+    }
+    .logo_container h2{
+        font-size:4rem;
+        margin:1%;
+    }
+}
