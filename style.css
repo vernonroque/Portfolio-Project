@@ -10,7 +10,6 @@ header{
     background-color: black;
     position:fixed;
     top:0;
-    
 }
 .logo_container{
     height:100%;
@@ -25,6 +24,75 @@ header{
     font-family:"Londrina Solid";
     font-size:2.5rem;
 }
+.nav_links{
+    background-color: black;
+    width:100%;
+    transform:scale(1,0);
+    transform-origin:top;
+    transition:transform 500ms ease-in-out;
+}
+.nav_links a{
+    opacity:0;
+    transition:opacity 100ms ease-in-out;
+}
+.list_container{
+    font-family:"Londrina Solid";
+    font-weight:400;
+    font-size:1.4rem;
+    padding:2%;
+    text-decoration:none;
+    margin-left:1%;
+}
+.list_item a{
+    text-transform:uppercase;
+    color:white;
+    text-decoration: none;
+}
+.nav_links a:hover{
+    color: #FFDE59;
+}
+.nav_toggle:checked ~ nav{
+    transform:scale(1,1);
+}
+.nav_toggle:checked ~ nav a{
+    opacity:1;
+    transition:opacity 250ms ease-in-out 250ms;
+}
+.nav_toggle{
+    display:none;
+}
+span{
+    color:white;
+}
+.nav_toggle_label{
+    display:flex;
+    position:absolute;
+    top:0;
+    height:100%;
+    align-items:flex-end;
+    padding:3%;
+    padding-bottom:4%;
+}
+.nav_toggle_label span,
+.nav_toggle_label span::before,
+.nav_toggle_label span::after{
+    display:inline-block;
+    background-color:white;
+    height: 2px;
+    width:1.5em;
+    border-radius:2px;
+    position:relative;
+}
+.nav_toggle_label span::before,
+.nav_toggle_label span::after{
+    content:'';
+    position:absolute;
+}
+.nav_toggle_label span::before{
+    bottom:7px;
+}.nav_toggle_label span::after{
+    top:7px;
+}
 @media only screen and (min-width:800px){
     .logo_container{
         flex-direction:row;
@@ -32,7 +100,6 @@ header{
         margin-left:1%;
     }
     .logo{
-        
         width:130px;
         height:130px;
     }
