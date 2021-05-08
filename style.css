@@ -31,7 +31,14 @@ header{
     transform-origin:top;
     transition:transform 500ms ease-in-out;
 }
+.nav_links ul{
+    margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+}
 .nav_links a{
+    margin-left:2%;
     opacity:0;
     transition:opacity 100ms ease-in-out;
 }
@@ -94,6 +101,43 @@ span{
 }.nav_toggle_label span::after{
     top:7px;
 }
+.about_me{
+    margin-top:170px;
+}
+.about_me h2{
+    font-family: "Londrina Solid";
+    font-size:2rem;
+    text-align:center;
+}
+.about_me p{
+    font-family: Lato;
+    padding: 0 2%;
+}
+.par_and_img{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+}
+.profile_pic{
+    border-radius:10px;
+    max-width:95%;
+    height:auto;
+    margin-bottom:3%;
+}
+.projects h2{
+    font-family: "Londrina Solid";
+    font-size:2rem;
+    text-align:center;
+    margin:3%;
+}
+.project_list ul>li{
+    list-style:disc inside;
+    font-family:Lato;
+    font-size:1.3rem;
+    font-weight:900;
+}
+
 @media only screen and (min-width:900px){
     header{
         display:grid;
@@ -123,7 +167,15 @@ span{
         grid-column:3 / 6;
         width:100%;
     }
+    .nav_links ul{
+        list-style:none;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        vertical-align: baseline;
+    }
     .nav_links a{
+        margin-left:0;
         opacity:1;
         font-size:2rem;
         position:relative;
@@ -154,5 +206,14 @@ span{
     }
     .list_container .list_item{
         margin: 0 2%;
+    }
+    .par_and_img{
+        display:flex;
+        flex-direction:row;
+        align-items:flex-start;
+        justify-content:center;
+    }
+    .about_me p{
+        max-width:800px;
     }
 }
