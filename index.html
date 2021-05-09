@@ -11,7 +11,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./images/portfolio-logo.png" type="image/png">
-    <script src="main.js"></script>
     <title>Vernon's Portfolio</title>
 </head>
 <body>
@@ -35,7 +34,7 @@
         </nav>
     </header>
     <!--About Me Section-->
-    <section class = "about_me">
+    <section class = "about_me" id="about_me">
         <h2>About Me</h2>
         <br>
         <div class="par_and_img">
@@ -54,14 +53,25 @@
     </section>
     <section class="projects">
         <h2>Projects</h2>
-        <div class="project_list">
-            <ul>
-                <li>Credit Card Checker</li>
-                <li>The Amazon Hangout</li>
+        <div class="project_list" >
+            <ul id ="project_list">
+                <li id="project_1">Credit Card Checker</li>
+                    <div class="project_container">
+                        <img id="project_1_image" src = "./images/projects/credit_card_photo.png" alt="credit card photo" width='822' height='548'>
+                        <p id="project_description">Used javascript to create a program that checks to see if a credit card number is valid or not.</p>
+                        <button id="close_button">Close</button>
+                    </div>
+                <li id = "project_2">The Amazon Hangout</li>
+                <div class="project_container">
+                    <img id="project_2_image" src = "./images/projects/amazon_hangout.png" alt="amazon travel photo" width='822' height='548'>
+                    <p id="project_description2">Used html and css to create a webpage for a travel agency in the amazon.</p>
+                    <button id="close_button2">Close</button>
+                </div>
                 <li>Message Generator</li>
                 <li>Bogota Jazz Club</li>
             </ul>
         </div>
     </section>
+    <script src="main.js"></script>
 </body>
 </html>

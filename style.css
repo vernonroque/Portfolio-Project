@@ -132,12 +132,65 @@ span{
     margin:3%;
 }
 .project_list ul>li{
+    cursor:pointer;
     list-style:disc inside;
     font-family:Lato;
     font-size:1.3rem;
     font-weight:900;
 }
-
+.project_container{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    width:100%;
+}
+#project_1_image{
+    max-width:90%;
+    height:auto;
+    padding:2%;
+    margin:2%;
+    display:none;
+    border: 3px solid #FFDE59 ;
+    border-radius:10px;
+}
+#project_2_image{
+    max-width:90%;
+    height:auto;
+    padding:2%;
+    margin:2%;
+    display:none;
+    border: 3px solid #FFDE59 ;
+    border-radius:10px;
+}
+#project_description{
+    font-family:lato;
+    font-size:1rem;
+    display:none;
+}
+#project_description2{
+    font-family:lato;
+    font-size:1rem;
+    display:none;
+}
+#close_button{
+    background-color:aquamarine;
+    width:50%;
+    margin:1%;
+    font-family: lato;
+    font-weight:700;
+    border-radius:5px;
+    display:none;  
+}
+#close_button2{
+    background-color:aquamarine;
+    width:50%;
+    margin:1%;
+    font-family: lato;
+    font-weight:700;
+    border-radius:5px;
+    display:none;  
+}
 @media only screen and (min-width:900px){
     header{
         display:grid;
@@ -189,6 +242,7 @@ span{
         background: #FFDE59;
         position:absolute;
         transform: scale(0,1);
+        transform-origin: left;
         transition: transform ease-in-out 250ms;
     }
     .nav_links a:hover::before{
@@ -215,5 +269,8 @@ span{
     }
     .about_me p{
         max-width:800px;
+    }
+    #close_button{
+        width:20%;
     }
 }
