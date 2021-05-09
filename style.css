@@ -150,11 +150,30 @@ span{
     height:auto;
     padding:2%;
     margin:2%;
+    border-radius:10px;
+    display:none;
+    border: 3px solid #FFDE59 ;
+    
+}
+#project_2_image{
+    max-width:90%;
+    height:auto;
+    padding:2%;
+    margin:2%;
     display:none;
     border: 3px solid #FFDE59 ;
     border-radius:10px;
 }
-#project_2_image{
+#project_3_image{
+    max-width:90%;
+    height:auto;
+    padding:2%;
+    margin:2%;
+    display:none;
+    border: 3px solid #FFDE59 ;
+    border-radius:10px;
+}
+#project_4_image{
     max-width:90%;
     height:auto;
     padding:2%;
@@ -166,11 +185,25 @@ span{
 #project_description{
     font-family:lato;
     font-size:1rem;
+    max-width:90%;
     display:none;
 }
 #project_description2{
     font-family:lato;
     font-size:1rem;
+    max-width:90%;
+    display:none;
+}
+#project_description3{
+    font-family:lato;
+    font-size:1rem;
+    max-width:90%;
+    display:none;
+}
+#project_description4{
+    font-family:lato;
+    font-size:1rem;
+    max-width:90%;
     display:none;
 }
 #close_button{
@@ -183,6 +216,24 @@ span{
     display:none;  
 }
 #close_button2{
+    background-color:aquamarine;
+    width:50%;
+    margin:1%;
+    font-family: lato;
+    font-weight:700;
+    border-radius:5px;
+    display:none;  
+}
+#close_button3{
+    background-color:aquamarine;
+    width:50%;
+    margin:1%;
+    font-family: lato;
+    font-weight:700;
+    border-radius:5px;
+    display:none;  
+}
+#close_button4{
     background-color:aquamarine;
     width:50%;
     margin:1%;
@@ -270,7 +321,7 @@ span{
     .about_me p{
         max-width:800px;
     }
-    #close_button{
+    #close_button,#close_button2, #close_button3, #close_button4{
         width:20%;
     }
 }
