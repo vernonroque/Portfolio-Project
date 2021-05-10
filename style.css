@@ -265,10 +265,31 @@ span{
 i{
     flex-basis: 36px;
     padding:2%;
+    text-decoration:none;
+    color:black;
 }
 /*Contact page styling */
 .contact_container{
-    margin-top:150px;
+    margin-top:160px;
+}
+.contact_container .contact_title{
+    font-family: "Londrina Solid";
+    font-size: 2rem;
+    text-align:center;
+    margin:3%;
+}
+.contact_container p{
+    font-family: lato;
+    text-align:center;
+    margin:2%;
+
+}
+.contact_icon_container{
+    display:flex;
+    justify-content: space-around;
+}
+.contact_icon_container a{
+    padding: 2%;
 }
 
 
@@ -353,5 +374,16 @@ i{
     }
     #close_button,#close_button2, #close_button3, #close_button4{
         width:20%;
+    }
+    .contact_container .contact_title{
+        text-align:left;
+    }
+    .contact_container p{
+        text-align:left;
+    
+    }
+    .contact_icon_container{
+        display:flex;
+        justify-content: flex-start;
     }
 }
